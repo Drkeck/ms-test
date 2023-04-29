@@ -1,7 +1,7 @@
-import express from 'express';
+import Express from 'express';
 // import inquirer from 'inquirer';
 
-const server = express();
+const server = Express();
 const port = 3000;
 
 function app() {

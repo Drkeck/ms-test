@@ -2,13 +2,13 @@
   "name": "ms-test",
   "version": "1.0.0",
   "description": "a testbed for MS structure.",
-  "exports": "./index",
+  "exports": "./index.ts",
   "type": "module",
   "engines": {
     "node": ">=18.15.0"
   },
   "scripts": {
-    "start": "nodemon ./index.ts",
+    "start": "nodemon index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

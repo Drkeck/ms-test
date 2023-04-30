@@ -1,21 +1,16 @@
-import Express from 'express';
-// import inquirer from 'inquirer';
+import inquirer from 'inquirer';
 
-const server = Express();
-const port = 3000;
 
 function app() {
-    server.listen(port, () => {
-        console.log(`listening on port ${port}`);
-        // inquirer
-        //     .prompt([{
-        //         type: 'list',
-        //         name: 'userInput',
-        //         message: 'what example would you like to visit',
-        //         choices: ['math', 'misc functions', 'strings']
-        //     }])
+        inquirer
+            .prompt([{
+                type: 'input',
+                name:'input'
+            }])
+            .then(async (answer) => {
+                console.log(answer.input);
+            })
 
-    })
 }
 
 export default app;
